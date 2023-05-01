@@ -8,9 +8,25 @@
     object-fit: cover;
 }
 
+.custom-movie-poster2 {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* right: 15rem;
+    top: 14rem; */
+}
+
 .custom-mb{
     margin-bottom: 5px;
 }
+
+.float-right-custom {
+    margin-left: auto !important;
+    margin-top: -80px;
+  }
+
+
 
 .custom-quality {
     position: absolute;

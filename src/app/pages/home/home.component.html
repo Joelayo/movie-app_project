@@ -18,7 +18,7 @@
                                         <span>hd</span>
                                     </li>
                                     <li class="category">
-                                        <a href="#">Romance,</a>
+                                        <a href="#">{{item.genre_ids}}Romance,</a>
                                         <a href="#">Drama</a>
                                     </li>
                                     <li class="release-time">
@@ -30,7 +30,13 @@
                             <a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" class="banner-btn btn popup-video wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.8s"><i class="fas fa-play"></i> Watch Now</a>
                         </div>
                     </div>
+                    <div class="col-xl-3 col-lg-8 float-right-custom">
+                        <div class="movie-poster wow fadeInUp custom-mb" data-wow-delay=".4s" data-wow-duration="1.8s">
+                            <a href="movie-details.html"><img class="custom-movie-poster2" src="https://image.tmdb.org/t/p/original/{{item.poster_path}}" alt=""></a>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
         
@@ -57,7 +63,7 @@
                             <div *ngFor="let item of upcomingmovies.slice(0, 6)" class="col-md-2">
                                 <div class="movie-item mb-50">
                                     <div class="movie-poster">
-                                        <a href="movie-details.html"><img class="custom-movie-poster" src="https://image.tmdb.org/t/p/w500/{{item.poster_path}}" alt=""></a>
+                                        <a href="movie-details.html"><img class="custom-movie-poster" src="https://image.tmdb.org/t/p/original/{{item.poster_path}}" alt=""></a>
                                     </div>
                                     <div class="movie-content">
                                         <!-- <div class="top">
